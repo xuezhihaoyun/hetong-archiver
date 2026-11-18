@@ -104,7 +104,13 @@ python3 rename.py "<root>/中转"      # 演练改名：出台账 CSV
 
 ## 作者与授权
 
-维护者：[xuezhihaoyun](https://github.com/xuezhihaoyun)（两台 Mac 与多个 AI 会话共同开发维护）
+**叶薛之律师**（广东淳锋律师事务所）
+
+微信交流：扫码添加
+
+<div align="center">
+  <img src="assets/wechat-qrcode.png" alt="微信二维码" width="240">
+</div>
 
 本仓库采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 授权：他人可自由分享与改编，但须署名、不得用于商业目的、衍生作品须以相同协议共享。全文见 [LICENSE](LICENSE)。
 
