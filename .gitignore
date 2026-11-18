@@ -6,3 +6,8 @@ local.json
 __pycache__/
 *.pyc
 .DS_Store
+
+# 自动归档运行记录
+自动归档日志.md
+logs/
+.auto_archive.lock
