@@ -1,6 +1,6 @@
 # hetong-archiver
 
-![version](https://img.shields.io/badge/version-1.0.1-blue) ![platform](https://img.shields.io/badge/platform-macOS-lightgrey) ![python](https://img.shields.io/badge/python-3.9%20内置-informational) ![deps](https://img.shields.io/badge/依赖-零%20pip-success) ![mode](https://img.shields.io/badge/模式-演练优先-orange)
+![version](https://img.shields.io/badge/version-1.0.1-blue) ![platform](https://img.shields.io/badge/platform-macOS-lightgrey) ![python](https://img.shields.io/badge/python-3.9%20内置-informational) ![deps](https://img.shields.io/badge/依赖-零%20pip-success) ![mode](https://img.shields.io/badge/模式-演练优先-orange) ![license](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red)
 
 合同归档与统一命名。把 `📚合同审查/中转` 里处理完的合同，按当事人主体识别客户，归入 `00.已经处理/<客户>/`，并按统一规则改名。判不出的件留在原处出清单，从不删除文件，从不覆盖。
 
@@ -101,3 +101,11 @@ python3 rename.py "<root>/中转"      # 演练改名：出台账 CSV
 4. 客户归属有歧义时问人，不猜
 
 **一句话原则：能判就归，判不出就问人，问不出就留原地。宁可多问一句，不可归错一处。**
+
+## 作者与授权
+
+维护者：[xuezhihaoyun](https://github.com/xuezhihaoyun)（两台 Mac 与多个 AI 会话共同开发维护）
+
+本仓库采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 授权：他人可自由分享与改编，但须署名、不得用于商业目的、衍生作品须以相同协议共享。全文见 [LICENSE](LICENSE)。
+
+合同文件、客户规则表、归档日志与改名台账属于客户资料与业务数据，不在授权范围内，一律不得分享；`config.example.json` 含真实客户名，分享前须先脱敏。

@@ -1,0 +1,29 @@
+hetong-archiver · 合同归档与统一命名
+Copyright (c) 2026 xuezhihaoyun
+
+本作品采用「署名-非商业性使用-相同方式共享 4.0 国际」许可协议
+（CC BY-NC-SA 4.0）授权。
+
+  人可读版（中文）：https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
+  法律文本（Legal Code）：https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+您可以自由地：
+
+  共享 —— 在任何媒介以任何形式复制、分发本作品
+  改编 —— 修改、转换或以本作品为基础进行创作
+
+惟须遵守下列条件：
+
+  署名（BY）     —— 必须注明原作者 xuezhihaoyun，并提供本许可声明链接
+  非商业性（NC） —— 不得将本作品用于商业目的
+  相同方式共享   —— 若您修改、转换或以本作品为基础进行创作，
+                    必须以与本许可相同的协议分发您的贡献
+
+附加说明：
+
+  本仓库 config.example.json 含真实客户名称，任何分享、公开或
+  再分发之前，必须先将其中的真实客户信息替换为示例数据。
+
+  本仓库中的合同文件、客户规则表（<root>/.合同归档/config.json）、
+  归档日志与改名台账属于客户资料与业务数据，不属于本许可授权范围，
+  一律不得分享。
