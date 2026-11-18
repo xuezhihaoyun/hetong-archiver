@@ -109,7 +109,7 @@ python3 rename.py "<root>/中转"      # 演练改名：出台账 CSV
 微信交流：扫码添加
 
 <div align="center">
-  <img src="assets/wechat-qrcode.png" alt="微信二维码" width="240">
+  <img src="assets/wechat-qrcode.png" alt="微信二维码" width="160">
 </div>
 
 本仓库采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 授权：他人可自由分享与改编，但须署名、不得用于商业目的、衍生作品须以相同协议共享。全文见 [LICENSE](LICENSE)。
