@@ -22,6 +22,8 @@ import re
 import sys
 import datetime
 
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 from dispatch import load_cfg, sniff_text
 from parties import extract_parties
 
