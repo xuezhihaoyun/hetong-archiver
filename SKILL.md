@@ -9,6 +9,11 @@ description: 合同文件归档与统一命名流水线——把「📚合同审
 **管的东西**: `~/Library/Mobile Documents/com~apple~CloudDocs/📚合同审查/`
 **三个区**: 根目录＝新进待审队列；`中转/`＝处理完毕待归档；`00.已经处理/<客户>/`＝归档
 
+## 两种模式
+
+- **全自动（默认，叶律师 2026-11-18 定）**：`install_watcher.sh` 装了 launchd 监听 `中转`，文件一进去就自动改名+归档+弹通知。人不需要在场。
+- **手工**：叶律师喊「归档」时走下面的五步，先演练再执行。判错复盘、规则调整、批量洗历史文件时用。
+
 ## 固定工作流（五步，不得跳步）
 
 1. **体检**：`python3 scripts/init_config.py`（换机器或新增客户文件夹后跑一次；本机已有 config.json 时会保留手写别名与规则）
@@ -60,6 +65,7 @@ description: 合同文件归档与统一命名流水线——把「📚合同审
 hetong-archiver/
 ├── SKILL.md
 ├── install.sh             # 一键部署（软链 + 生成配置 + 冒烟测试）
+├── install_watcher.sh     # 装自动归档（launchd 监听中转）
 ├── local.json             # 本机配置：只记合同根目录在哪（每台机器一份）
 ├── config.example.json    # 默认规则模板
 ├── scripts/

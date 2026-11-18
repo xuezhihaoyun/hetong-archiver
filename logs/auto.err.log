@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/auto_archive.py", line 162, in <module>
+    main()
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/auto_archive.py", line 102, in main
+    c = cfgmod.load(require_root=False)
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/cfg.py", line 63, in load
+    with open(sp, encoding="utf-8") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/yexuezhi/Library/Mobile Documents/com~apple~CloudDocs/📚合同审查/.合同归档/config.json'
+Traceback (most recent call last):
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/auto_archive.py", line 162, in <module>
+    main()
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/auto_archive.py", line 102, in main
+    c = cfgmod.load(require_root=False)
+  File "/Users/yexuezhi/claude-code-项目工作区/skills/hetong-archiver/scripts/cfg.py", line 63, in load
+    with open(sp, encoding="utf-8") as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/yexuezhi/Library/Mobile Documents/com~apple~CloudDocs/📚合同审查/.合同归档/config.json'

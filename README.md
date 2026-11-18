@@ -8,7 +8,15 @@
 `https://github.com/xuezhihaoyun/hetong-archiver`（private）——两台 Mac 用 `git pull/push` 共同管理。
 **合同文件不进 git**，仍留在 iCloud 的 `📚合同审查`；规则表放 `<root>/.合同归档/config.json`，随 iCloud 同步。
 
-## 三分钟上手
+## 全自动模式（2026-11-18 起为默认）
+
+```bash
+bash install_watcher.sh     # 装一次，之后文件一丢进「中转」就自动归档并弹通知
+```
+
+详见 `自动归档.md`。判不出客户的件仍留在 `中转` 不动，通知里点出来。
+
+## 三分钟上手（手工模式）
 
 ```bash
 bash install.sh                      # 装到这台 Mac（软链 + 生成配置 + 冒烟测试）
@@ -23,6 +31,7 @@ cd scripts && python3 rename.py "<root>/中转"   # 演练改名：出台账
 | 文档 | 什么时候看 |
 |---|---|
 | `INSTALL-FOR-AI.md` | **把整包丢给 AI 部署时，让它先读这个** |
+| `自动归档.md` | **丢了就跑、跑完通知**：安装、行为、红线、排查 |
 | `使用说明.md` | 日常怎么用、怎么加客户、怎么沉淀规则 |
 | `SKILL.md` | AI 的工作流与红线（agent 的入口） |
 | `references/命名规则.md` | 文件名各段的确切口径 |
