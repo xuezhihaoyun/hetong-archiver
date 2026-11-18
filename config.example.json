@@ -258,8 +258,8 @@
     },
     {
       "pattern": ".ppt",
-      "client": "__OTHER__",
-      "note": "演示文稿不是合同交付物，归其他"
+      "client": "__DIR__:其他/ppt",
+      "note": "演示文稿不是合同交付物，归 其他/ppt"
     }
   ],
   "fallback_dir": "其他"
