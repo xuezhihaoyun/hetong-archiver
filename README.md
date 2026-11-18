@@ -3,6 +3,11 @@
 把 `📚合同审查/中转` 里处理完的合同，**按当事人主体识别客户**归入 `00.已经处理/<客户>/`，
 并按统一规则改名。判不出的件留在原处出清单，从不删文件、从不覆盖。
 
+## 代码与文档在 GitHub
+
+`https://github.com/xuezhihaoyun/hetong-archiver`（private）——两台 Mac 用 `git pull/push` 共同管理。
+**合同文件不进 git**，仍留在 iCloud 的 `📚合同审查`；规则表放 `<root>/.合同归档/config.json`，随 iCloud 同步。
+
 ## 三分钟上手
 
 ```bash

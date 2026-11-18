@@ -4,7 +4,17 @@
 目标：把它装到**这台 Mac**上，让 Claude Code / Codex / pi 等 harness 都能调用，
 并能把 `📚合同审查/中转` 里的合同按客户自动归档、按统一规则改名。
 
-## 一步到位
+## 首选：从 GitHub 装
+
+```bash
+mkdir -p ~/claude-code-项目工作区/skills && cd ~/claude-code-项目工作区/skills
+git clone https://github.com/xuezhihaoyun/hetong-archiver.git
+cd hetong-archiver && bash install.sh
+```
+
+私有仓库，需要那台机器上 `gh auth login` 过（或配好 SSH key）。
+
+## 备选：从压缩包装（离线/没配 git 时）
 
 ```bash
 cd <解压后的 hetong-archiver 目录>
