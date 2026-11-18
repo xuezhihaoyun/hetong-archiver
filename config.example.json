@@ -255,6 +255,11 @@
     {
       "pattern": "廉洁承诺书",
       "client": "__OTHER__"
+    },
+    {
+      "pattern": ".ppt",
+      "client": "__OTHER__",
+      "note": "演示文稿不是合同交付物，归其他"
     }
   ],
   "fallback_dir": "其他"
