@@ -268,6 +268,9 @@ def main():
                     if r["client"] == "__TEMPLATE__":
                         client = {"name": "模板库", "dir": cfg.get("template_dir", "其他/模板库")}
                         why = f"固定规则「{r['pattern']}」→ 模板库"
+                    elif r["client"] == "__OTHER__":
+                        client = {"name": "其他", "dir": cfg.get("fallback_dir", "其他")}
+                        why = f"固定规则「{r['pattern']}」→ 其他"
                     else:
                         tgt = next((x for x in cfg["clients"] if x["name"] == r["client"]), None)
                         if tgt:

@@ -251,6 +251,10 @@
     {
       "pattern": "合作协议书",
       "client": "未来学校"
+    },
+    {
+      "pattern": "廉洁承诺书",
+      "client": "__OTHER__"
     }
   ],
   "fallback_dir": "其他"
