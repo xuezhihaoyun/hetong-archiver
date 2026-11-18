@@ -17,6 +17,9 @@ if [[ "${1:-}" == "--uninstall" ]]; then
   exit 0
 fi
 
+# 用真实解释器路径（/usr/bin/python3 只是壳，TCC 授权要授给真实二进制）
+REALPY=$(python3 -c "import os,sys;print(os.path.realpath(sys.executable))")
+
 ROOT=$(cd "$DIR/scripts" && python3 -c "import cfg;print(cfg.load()['root'])" 2>/dev/null)
 [[ -n "$ROOT" && -d "$ROOT" ]] || die "找不到合同审查目录，先跑 bash install.sh"
 INBOX="$ROOT/中转"
@@ -32,7 +35,7 @@ cat > "$PLIST" <<EOF
   <key>Label</key><string>$LABEL</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
+    <string>$REALPY</string>
     <string>$DIR/scripts/auto_archive.py</string>
   </array>
   <key>WatchPaths</key>
@@ -55,6 +58,9 @@ echo "  监听目录：$INBOX"
 echo "  行为：丢进去 → 等几秒稳定 → 自动改名并归到客户目录 → 弹通知告诉你归到哪几家、剩几份要你看"
 echo "  判不出客户的件留在 中转 不动，通知里会点出来"
 echo "  日志：$DIR/自动归档日志.md（脚本运行输出：$DIR/logs/）"
+echo
+echo "  ⚠ 首次安装若发现文件丢进去没反应，是 macOS 权限问题："
+echo "     系统设置 → 隐私与安全性 → 完全磁盘访问权限 → ＋ → Cmd+Shift+G → 粘贴 $REALPY"
 echo
 echo "  卸载：bash install_watcher.sh --uninstall"
 echo "  先手测一次：python3 scripts/auto_archive.py"
